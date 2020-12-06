@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Work Space">
+    <menu>
+        <item
+            android:id="@+id/home"
+            android:title="Home Client"
+            android:icon="@drawable/ic_home"
+            />
+        <item
+            android:id="@+id/schedule"
+            android:title="Schedule"
+            android:icon="@drawable/ic_shedule"
+            />
+
+    </menu>
+
+
+</item>
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <item android:title="User Space">
+        <menu>
+
+            <item
+                android:id="@+id/profile"
+                android:title="Profile"
+                android:icon="@drawable/ic_profile"
+
+                />
+
+
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                android:icon="@drawable/ic_logout"
+
+                />
+            <item
+                android:id="@+id/notes"
+                android:title="Notes"
+                android:icon="@drawable/ic_notes"
+
+                />
+
+        </menu>
+
+
+    </item>
+
+
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <item android:title="Abonnement">
+        <menu>
+
+            <item
+                android:id="@+id/abonnement"
+                android:title="Renouvler l'abonnement"
+                android:icon="@drawable/ic_refresh"
+                />
+            <item
+                android:id="@+id/reserver_seance"
+                android:title="Reserver des Seances"
+                android:icon="@drawable/ic_add"
+
+                />
+
+        </menu>
+
+
+    </item>
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=""
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+    <TextView
+        android:id="@+id/txt_id_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/login_form_details"
+
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_DateS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/login_form_details"
+        />
+
+    <TextView
+        android:id="@+id/txt_heurS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="1"
+
+        app:layout_constraintStart_toStartOf="@+id/txt_DateS"
+        app:layout_constraintEnd_toEndOf="@+id/txt_DateS"
+        app:layout_constraintTop_toBottomOf="@+id/txt_DateS"
+        android:textColor="@color/login_form_details"
+        />
+
+    <TextView
+        android:id="@+id/txt_monitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Monitor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txt_DateS"
+        app:layout_constraintTop_toTopOf="@+id/txt_DateS"
+        android:textColor="@color/login_form_details"
+        />
+
+    <TextView
+        android:id="@+id/txt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="User"
+        app:layout_constraintStart_toStartOf="@+id/txt_monitor"
+        app:layout_constraintTop_toBottomOf="@+id/txt_monitor"
+        android:textColor="@color/login_form_details"
+        />
+
+    <Button
+        android:id="@+id/btn_Move"
+        android:layout_width="131dp"
+        android:layout_height="59dp"
+        android:background="@drawable/bg_btn"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="CompleteHandler"
+        android:text="Deplacer"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_monitor"
+        app:layout_constraintTop_toTopOf="@+id/txt_monitor" />
+
+    <TextView
+        android:id="@+id/txt_TRdescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="BLABLA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Move"
+        android:textColor="@color/login_form_details"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

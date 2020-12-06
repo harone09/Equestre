@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Work Space" >
+    <menu>
+        <item
+            android:id="@+id/home"
+            android:title="Home Admin"
+            android:icon="@drawable/ic_home"
+
+            />
+        <item
+            android:id="@+id/schedules"
+            android:title="Schedules"
+            android:icon="@drawable/ic_shedule"
+            />
+        <item
+            android:id="@+id/Reportedschedules"
+            android:title="Reported Schedules"
+            android:icon="@drawable/ic_report"
+            />
+
+        <item
+            android:id="@+id/add_schedule"
+            android:title="Add Schedules"
+            android:icon="@drawable/ic_add"
+            />
+        <item
+            android:id="@+id/add_task"
+            android:title="Add Tasks"
+            android:icon="@drawable/ic_add"
+            />
+        <item
+            android:id="@+id/User_Reservations"
+            android:title="User Reservations"
+            android:icon="@drawable/ic_reservation"
+            />
+
+    </menu>
+
+
+</item>
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+    <item android:title="User Space">
+        <menu>
+
+            <item
+                android:id="@+id/profile"
+                android:title="Profile"
+                android:icon="@drawable/ic_profile"
+                />
+
+
+
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                android:icon="@drawable/ic_logout"
+                />
+            <item
+                android:id="@+id/notes"
+                android:title="Notes"
+                android:icon="@drawable/ic_notes"
+                />
+
+        </menu>
+
+
+    </item>
+
+
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+</menu>

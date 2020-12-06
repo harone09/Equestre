@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_login">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="5"
+        android:text="Task :"
+        android:textColor="@color/login_form_details"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_TMonth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:maxLength="2"
+        android:padding="10dp"
+        android:textColorHint="@color/login_form_details"
+        android:textColor="@color/login_form_details"
+        android:background="@drawable/bg_edittext"
+        android:id="@+id/txt_THours"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="HH"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txt_TmonitorS"
+        app:layout_constraintStart_toStartOf="@+id/txt_TmonitorS" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="2dp"
+        android:textColorHint="@color/login_form_details"
+        android:textColor="@color/login_form_details"
+        android:text=" : "
+        app:layout_constraintStart_toEndOf="@+id/txt_THours"
+        app:layout_constraintTop_toTopOf="@+id/txt_THours" />
+
+    <EditText
+        android:maxLength="2"
+        android:padding="10dp"
+        android:textColorHint="@color/login_form_details"
+        android:textColor="@color/login_form_details"
+        android:background="@drawable/bg_edittext"
+        android:id="@+id/txt_TMinutes"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/txt_THours" />
+
+    <EditText
+        android:id="@+id/txt_TDay"
+        android:maxLength="2"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:textColorHint="@color/login_form_details"
+        android:textColor="@color/login_form_details"
+        android:background="@drawable/bg_edittext"
+        android:hint="Day"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txt_THours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_TmonitorS" />
+
+    <EditText
+        android:maxLength="2"
+
+        android:id="@+id/txt_TMonth"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Month"
+        android:padding="10dp"
+        android:textColorHint="@color/login_form_details"
+        android:textColor="@color/login_form_details"
+        android:background="@drawable/bg_edittext"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/txt_TDay"
+        app:layout_constraintTop_toTopOf="@+id/txt_TDay" />
+
+    <EditText
+        android:id="@+id/txt_TYear"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Year"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColorHint="@color/login_form_details"
+        android:textColor="@color/login_form_details"
+        android:background="@drawable/bg_edittext"
+        app:layout_constraintStart_toEndOf="@+id/txt_TMonth"
+        app:layout_constraintTop_toTopOf="@+id/txt_TMonth" />
+
+    <EditText
+        android:id="@+id/txt_TmonitorS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:textColorHint="@color/login_form_details"
+        android:textColor="@color/login_form_details"
+        android:background="@drawable/bg_edittext"
+        android:hint="Monitor Username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_TAdescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/txt_TAdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Description"
+        android:padding="10dp"
+        android:textColorHint="@color/login_form_details"
+        android:textColor="@color/login_form_details"
+        android:background="@drawable/bg_edittext"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Trepetition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/txt_Trepetition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="number of Repetitions"
+        android:padding="10dp"
+        android:textColorHint="@color/login_form_details"
+        android:textColor="@color/login_form_details"
+        android:background="@drawable/bg_edittext"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_AddTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_AddTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/bg_btn"
+        android:padding="16dp"
+        android:text="Add Task"
+        android:textColor="@color/login_form_details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
